@@ -5,8 +5,6 @@ import com.qm.cleanmodule.base.network.HandleResponseData
 import com.qm.cleanmodule.base.network.response.NetworkResponse
 import com.qm.cleanmodule.ui.fragment.home.HomeRepository
 import com.qm.cleanmodule.ui.fragment.home.HomeResponse
-import com.qm.cleanmodule.ui.fragment.login.LoginRequest
-import com.qm.cleanmodule.ui.fragment.login.LoginResponse
 import com.qm.cleanmodule.util.Resource
 import io.reactivex.rxjava3.core.Flowable
 import io.reactivex.rxjava3.core.Observable

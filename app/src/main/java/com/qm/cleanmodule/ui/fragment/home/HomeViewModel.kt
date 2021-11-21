@@ -36,9 +36,7 @@ class HomeViewModel @Inject constructor(
     }
   }
 
-  init {
-    getData()
-  }
+  init { }
 
   private fun getData() {
     if (!AppUtil.isNetworkAvailable(app)) {

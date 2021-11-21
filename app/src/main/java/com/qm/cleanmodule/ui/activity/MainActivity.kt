@@ -77,9 +77,6 @@ class MainActivity : BaseActivity<ActivityMainBinding, MainViewModel>(),
 
   override fun onBackPressed() {
     when (navController?.currentDestination?.id) {
-      R.id.loginFragment -> {
-        showExitDialog()
-      }
       R.id.splashFragment -> {
       }
       else -> {
