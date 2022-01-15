@@ -1,7 +1,7 @@
-package com.mabaat.androidapp.base.network
+package com.qm.cleanmodule.base.network.response
 
 
-import com.qm.cleanmodule.base.network.response.NetworkResponse
+import com.mabaat.androidapp.base.network.NetworkResponseCall
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.CallAdapter

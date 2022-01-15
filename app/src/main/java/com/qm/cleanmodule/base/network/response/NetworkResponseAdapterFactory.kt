@@ -1,6 +1,7 @@
 package com.mabaat.androidapp.base.network
 
 import com.qm.cleanmodule.base.network.response.NetworkResponse
+import com.qm.cleanmodule.base.network.response.NetworkResponseAdapter
 import kotlinx.coroutines.Deferred
 import retrofit2.Call
 import retrofit2.CallAdapter

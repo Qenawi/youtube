@@ -1,16 +1,9 @@
 package com.qm.cleanmodule.data.remote
 
-import com.mabaat.androidapp.base.network.ResponseHandler
-import com.qm.cleanmodule.base.network.HandleResponseData
 import com.qm.cleanmodule.base.network.response.NetworkResponse
-import com.qm.cleanmodule.ui.fragment.home.HomeRepository
-import com.qm.cleanmodule.ui.fragment.home.HomeResponse
-import com.qm.cleanmodule.util.Resource
-import io.reactivex.rxjava3.core.Flowable
-import io.reactivex.rxjava3.core.Observable
-import retrofit2.http.Body
+import com.qm.cleanmodule.data.model.SongStreamResponseModel
+import retrofit2.Response
 import retrofit2.http.GET
-import retrofit2.http.POST
 import retrofit2.http.Query
 
 /**
@@ -18,8 +11,10 @@ import retrofit2.http.Query
  **/
 
 interface ApiService {
+    companion object {
+        private const val singleStreamUrl = "fetch_single_video"
+    }
 
-  @GET("character")
-//  fun getChars(@Query("page") page: Int): Flowable<Resource<HomeResponse>>
-  fun getChars(@Query("page") page: Int): Flowable<HomeResponse>
+    @GET(singleStreamUrl)
+    suspend fun getVideoStream(@Query("test" ,encoded = true) videoUrl: String?): SongStreamResponseModel
 }

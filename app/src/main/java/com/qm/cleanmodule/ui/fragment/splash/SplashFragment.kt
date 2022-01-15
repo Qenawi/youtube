@@ -23,9 +23,7 @@ class SplashFragment : BaseFragment<FragmentSplashBinding, SplashViewModel>() {
     mViewModel.apply {
       observe(mutableLiveData) {
         when (it) {
-          Codes.LOGIN_SCREEN -> navigateSafe(
-            SplashFragmentDirections.actionSplashFragmentToLoginFragment()
-          )
+          Codes.LOGIN_SCREEN -> navigateSafe(SplashFragmentDirections.actionSplashFragmentToLoginFragment())
         }
       }
     }

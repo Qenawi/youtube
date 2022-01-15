@@ -19,8 +19,6 @@
                 android:id="@+id/image"
                 android:layout_width="@dimen/_60sdp"
                 android:layout_height="@dimen/_60sdp"
-                loadImage="@{item.image}"
-                imageLoader="@{pb}"
                 tools:src="@tools:sample/backgrounds/scenic"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -41,7 +39,6 @@
                 android:id="@+id/tv_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{item.name}"
                 app:layout_constraintStart_toEndOf="@id/image"
                 app:layout_constraintTop_toTopOf="@id/image"
                 android:layout_marginStart="@dimen/_8sdp"
@@ -53,7 +50,6 @@
                 android:id="@+id/tv_type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{item.gender}"
                 app:layout_constraintStart_toEndOf="@id/image"
                 app:layout_constraintTop_toBottomOf="@id/tv_name"
                 android:layout_marginStart="@dimen/_8sdp"
@@ -65,7 +61,6 @@
                 android:id="@+id/tv_status"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@{item.status}"
                 app:layout_constraintStart_toEndOf="@id/image"
                 app:layout_constraintTop_toBottomOf="@id/tv_type"
                 android:layout_marginStart="@dimen/_8sdp"
@@ -76,10 +71,4 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </com.google.android.material.card.MaterialCardView>
 
-    <data>
-
-        <variable
-            name="item"
-            type="com.qm.cleanmodule.ui.fragment.home.HomeItem" />
-    </data>
 </layout>
